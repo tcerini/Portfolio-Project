@@ -1,0 +1,462 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+Colors used
+Text Color (Dark Gray): #2b2b2b;
+Primary Color (Green/Blue): var(--color-primary);;
+Secondary Color (Orange/Yellow): #e0b354;
+Link Colour - visited (Blue/Green): #05676e;
+Link Colour - active (Green): #489c79
+Grid colour (light yellow): #fff5cc;
+Grid broder (light yellow - darker): #fff0b3
+ */
+
+:root { /* var(--color-background) */ /* var(--color-primary) */ /* var(--color-secondary) */ /* var(--color-dark-grey) */ /* var(--color-grid) */ /* var(--color-grid-border) */ /* var(--color-link-active) */ /* var(--color-link-visited) */ /* var(--font-size-default) */ /* var(--font-size-xsmall) */ /* var(--font-size-small) */ /* var(--font-size-xmedium) */ /* var(--font-size-medium) */ /* var(--font-size-xlarge) */
+}
+
+a {
+  color: #357b70;
+}
+
+* {
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+}
+
+body {
+   background-color: #eeeeee;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #357b70;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+a:visited {
+  color: #05676e;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+a:active {
+  color: #489c79;
+}
+
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #357b70;;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+
+.button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #357b70;;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+
+.button_CV {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #357b70;;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus,
+.button_CV:hover,
+.button_CV:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+button.button__secondary {
+  background-color: #e0b354;
+  color: #2b2b2b;
+}
+
+.button_CV {
+  margin: auto;
+}
+
+img.tc-logo-long {
+  max-height: 71px;
+  width: auto;
+}
+
+header.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+  border-bottom: solid 1px #357b70;
+}
+
+header .page-header__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+}
+
+header .page-header__item:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+
+header .page-header__item:last-child ul li{
+  display: inline-block;
+  margin-right: 30px;
+}
+
+img.profile__portrait {
+  float: left;
+  width: 250px;
+  height: auto;
+  margin-right: 40px;
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.opera_house_animation {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+footer.page-footer {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+main.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+main.about-main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.skills-table {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+table.skills-table {
+  text-align: left;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid__item {
+  background-color: #fff5cc;
+  border-style: outset;
+  border-color: #fff0b3;
+  padding: 10px;
+  position: relative;
+}
+
+.grid__item:first-child {
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
+}
+
+.grid__item:last-child {
+  -ms-grid-column: 3;
+  grid-column: 3 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+main {
+  max-width: 1100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+}
+
+.workgrid_overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background-color: #e0b354
+}
+
+.grid__item:hover
+.workgrid_overlay {
+  opacity: .9;
+}
+
+.text_overlay {
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#contact-form * {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .tc-logo-long {
+    height: 40px;
+  }
+
+  .opera_house_animation {
+    width: 50%;
+    }
+
+  .skills-table {
+    font-size: 10px;
+  }
+}
+
+@-webkit-keyframes fw1-fadein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fw1-fadein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes fw2-fadein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fw2-fadein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes fw3-fadein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fw3-fadein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes fw4-fadein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fw4-fadein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes fw5-fadein {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes fw5-fadein {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.fw1 {
+  -webkit-animation-duration: .75s;
+          animation-duration: .75s;
+  -webkit-animation-name: fw1-fadein;
+          animation-name: fw1-fadein;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.fw2 {
+  -webkit-animation-duration: .75s;
+          animation-duration: .75s;
+  -webkit-animation-delay: .75s;
+          animation-delay: .75s;
+  -webkit-animation-name: fw2-fadein;
+          animation-name: fw2-fadein;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.fw3 {
+  -webkit-animation-duration: .75s;
+          animation-duration: .75s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-name: fw3-fadein;
+          animation-name: fw3-fadein;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.fw4 {
+  -webkit-animation-duration: .75s;
+          animation-duration: .75s;
+  -webkit-animation-delay: 2.25s;
+          animation-delay: 2.25s;
+  -webkit-animation-name: fw4-fadein;
+          animation-name: fw4-fadein;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.fw5 {
+  -webkit-animation-duration: .75s;
+          animation-duration: .75s;
+  -webkit-animation-delay: 3.0s;
+          animation-delay: 3.0s;
+  -webkit-animation-name: fw5-fadein;
+          animation-name: fw5-fadein;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
