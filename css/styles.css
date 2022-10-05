@@ -10,7 +10,7 @@ Grid broder (light yellow - darker): #fff0b3
  */
 
 :root {
-  --color-background: #eeeeee; /* var(--color-background) */
+  --color-background: #eee; /* var(--color-background) */
   --color-primary: #357b70; /* var(--color-primary) */
   --color-secondary: #e0b354; /* var(--color-secondary) */
   --color-dark-grey: #2b2b2b; /* var(--color-dark-grey) */
@@ -18,7 +18,6 @@ Grid broder (light yellow - darker): #fff0b3
   --color-grid-border: #fff0b3; /* var(--color-grid-border) */
   --color-link-active: #489c79; /* var(--color-link-active) */
   --color-link-visited: #05676e; /* var(--color-link-visited) */
-
   --font-size-default: 16px; /* var(--font-size-default) */
   --font-size-xsmall: 10px; /* var(--font-size-xsmall) */
   --font-size-small: 18px; /* var(--font-size-small) */
@@ -32,11 +31,11 @@ a {
 }
 
 * {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-   background-color: var(--color-background);
+  background-color: var(--color-background);
 }
 
 body {
@@ -66,7 +65,8 @@ a:visited {
   color: var(--color-link-visited);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus, {
   text-decoration: none;
 }
 
@@ -79,10 +79,12 @@ button,
 .button_CV {
   /* overwrites browser defaults and resets the border */
   border: none;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: var(--color-primary);;
+  background-color: var(--color-primary);
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -132,7 +134,7 @@ header .page-header__item:last-child {
   text-align: right;
 }
 
-header .page-header__item:last-child ul li{
+header .page-header__item:last-child ul li {
   display: inline-block;
   margin-right: 30px;
 }
@@ -226,12 +228,12 @@ main {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #e0b354
+  background-color: #e0b354;
 }
 
-.grid__item:hover
+.grid__item:hover,
 .workgrid_overlay {
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .text_overlay {
@@ -256,19 +258,23 @@ main {
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: var(--font-size-xmedium);
   }
@@ -281,7 +287,7 @@ main {
 
   .opera_house_animation {
     width: 50%;
-    }
+  }
 
   .skills-table {
     font-size: var(--font-size-xsmall);
@@ -289,32 +295,32 @@ main {
 }
 
 @keyframes fw1-fadein {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 @keyframes fw2-fadein {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 @keyframes fw3-fadein {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 @keyframes fw4-fadein {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 @keyframes fw5-fadein {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
+  0% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 .fw1 {
-  animation-duration: .75s;
+  animation-duration: 0.75s;
   animation-name: fw1-fadein;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -322,8 +328,8 @@ main {
 }
 
 .fw2 {
-  animation-duration: .75s;
-  animation-delay: .75s;
+  animation-duration: 0.75s;
+  animation-delay: 0.75s;
   animation-name: fw2-fadein;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -331,7 +337,7 @@ main {
 }
 
 .fw3 {
-  animation-duration: .75s;
+  animation-duration: 0.75s;
   animation-delay: 1.5s;
   animation-name: fw3-fadein;
   animation-iteration-count: infinite;
@@ -340,7 +346,7 @@ main {
 }
 
 .fw4 {
-  animation-duration: .75s;
+  animation-duration: 0.75s;
   animation-delay: 2.25s;
   animation-name: fw4-fadein;
   animation-iteration-count: infinite;
@@ -349,8 +355,8 @@ main {
 }
 
 .fw5 {
-  animation-duration: .75s;
-  animation-delay: 3.0s;
+  animation-duration: 0.75s;
+  animation-delay: 3s;
   animation-name: fw5-fadein;
   animation-iteration-count: infinite;
   animation-direction: alternate;
